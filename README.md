@@ -1,2 +1,2 @@
 # discord-seller-websıte
-Discord Badges <img src="https://cdn.discordapp.com/emojis/859867923958333478.png?size=20"> <img src="https://cdn.discordapp.com/emojis/892705947699535892.png?size=20">
+Discord Badges Sell WebSite<img src="https://cdn.discordapp.com/emojis/853376681044475934.gif?size=96">
