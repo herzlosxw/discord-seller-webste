@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="kaan#13376-">
+<link rel="shortcut icon" type="image/x-icon" href="./images/partner.png">
+
+
+<title>Ghost Shop</title>
+
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ghost Shop!" />
+<meta property="og:site_name" content="Ghost Shop" />
+
+<!-- MAIN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- EXTRAS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.4.0/dist/select2-bootstrap4.min.css">
+
+<!-- FONTS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- THEMES -->
+	<link rel="stylesheet" type="text/css" href="/apps/main/public/assets/css/themes/flat/main.min.css?v=529">
+	<link rel="stylesheet" type="text/css" href="/apps/main/public/assets/css/themes/flat/responsive.min.css?v=529">
+
+
+<!-- COLORS -->
+	<style type="text/css">
+							body {
+									background-color:#f8f8f8;							}
+					a {
+									color:#007bff;							}
+					a:active, a:hover, a:focus {
+									color:#0056b3;							}
+					.color-main {
+									color:#5e72e4;							}
+					.color-main:hover {
+									color:#324cdd;							}
+					.color-primary {
+									color:#5e72e4;							}
+					.color-primary:hover {
+									color:#324cdd;							}
+					.color-success {
+									color:#2dce89;							}
+					.color-success:hover {
+									color:#24a46d;							}
+					.color-danger {
+									color:#f5365c;							}
+					.color-danger:hover {
+									color:#ec0c38;							}
+					.color-warning {
+									color:#fb6340;							}
+					.color-warning:hover {
+									color:#fa3a0e;							}
+					.color-info {
+									color:#11cdef;							}
+					.color-info:hover {
+									color:#0da5c0;							}
+					.btn-primary, .badge-primary, .alert-primary, .bg-primary {
+									background-color:#5e72e4;							}
+					.btn-success, .badge-success, .alert-success, .bg-success {
+									background-color:#2dce89;							}
+					.btn-danger, .badge-danger, .alert-danger, .bg-danger {
+									background-color:#f5365c;							}
+					.btn-warning, .badge-warning, .alert-warning, .bg-warning {
+									background-color:#fb6340;							}
+					.btn-info, .badge-info, .alert-info, .bg-info {
+									background-color:#11cdef;							}
+					.text-primary {
+									color:#5e72e4 !important;							}
+					.text-success {
+									color:#2dce89 !important;							}
+					.text-danger {
+									color:#f5365c !important;							}
+					.text-warning {
+									color:#fb6340 !important;							}
+					.text-info {
+									color:#11cdef !important;							}
+					.btn-primary {
+									border-color:#5e72e4;							}
+					.btn-primary.active, .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+									border-color:#324cdd;									background-color:#324cdd;							}
+					.btn-success {
+									border-color:#2dce89;							}
+					.btn-success.active, .btn-success:active, .btn-success:hover, .btn-success:focus {
+									border-color:#24a46d;									background-color:#24a46d;							}
+					.btn-danger {
+									border-color:#f5365c;							}
+					.btn-danger.active, .btn-danger:active, .btn-danger:hover, .btn-danger:focus {
+									border-color:#ec0c38;									background-color:#ec0c38;							}
+					.btn-warning {
+									border-color:#fb6340;							}
+					.btn-warning.active, .btn-warning:active, .btn-warning:hover, .btn-warning:focus {
+									border-color:#fa3a0e;									background-color:#fa3a0e;							}
+					.btn-info {
+									border-color:#11cdef;							}
+					.btn-info.active, .btn-info:active, .btn-info:hover, .btn-info:focus {
+									border-color:#0da5c0;									background-color:#0da5c0;							}
+					.custom-control-input:checked~.custom-control-label::before {
+									border-color:#5e72e4;									background-color:#5e72e4;							}
+					.broadcast {
+									background-color:#232f3c;							}
+					.broadcast-link {
+									color:#ffffff !important;							}
+					.navbar-server {
+									color:#ffffff;									background-color:#f5365c;							}
+					.navbar-server.active {
+									background-color:#02b875;							}
+					.server-online-info {
+									color:#ffffff;									background-color:#f5365c;							}
+					.server-online-info.active {
+									background-color:#02b875;							}
+					.navbar-dark {
+									background-color:#273443;							}
+					.navbar-dark .navbar-nav .nav-link {
+									color:#ffffff !important;							}
+					.navbar-dark .navbar-nav .nav-item.active .nav-link, .navbar-dark .navbar-nav .nav-item:hover .nav-link, .navbar-dark .navbar-nav .nav-item:focus .nav-link {
+									color:#ffffff !important;									border-color:#5e72e4;									background-color:#5e72e4;							}
+					.navbar-dark .navbar-buttons .nav-item .nav-link {
+									border-color:#5e72e4;							}
+					.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+									border-color:#5e72e4;							}
+					.search-icon {
+									color:#ffffff;									background-color:#5e72e4;							}
+					.footer-top {
+									background-color:#273443;							}
+					.footer-top, .footer-top ul li a {
+									color:#a9aeb4;							}
+					.footer-bottom {
+									background-color:#232f3c;							}
+					.card-header:first-child, .modal-header {
+									background-color:#5e72e4;							}
+					.pagination .page-item.active .page-link, .pagination .page-item.active .page-link:hover {
+									border-color:#5e72e4;									background-color:#5e72e4;							}
+					.search-cancel:hover, .search-cancel:focus, .search-cancel:active {
+									color:#f5365c;							}
+					#preloader .spinner-border {
+									color:#5e72e4;							}
+					#scrollUp:hover {
+									background-color:#5e72e4;							}
+					.theme-color {
+									background-color:#5e72e4;							}
+					.theme-color.text-primary {
+									color:#5e72e4 !important;									background-color:transparent;							}
+					.theme-color.btn, .theme-color.badge {
+									border-color:#5e72e4;							}
+					.theme-color.btn.active, .theme-color.btn:active, .theme-color.btn:hover, .theme-color.btn:focus {
+									border-color:#324cdd;									background-color:#324cdd;							}
+			</style>
+
+<!-- CUSTOM CSS -->
+<style type="text/css">
+	.message-content {
+    width: calc(100%) !important;
+}</style>
+	</head>
+	<body style="overflow: hidden;">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style type="text/css">
+      @media all and (min-width: 992px) {
+      .navbar-dark .navbar-nav .nav-item {
+        margin: .375rem .125rem;
+      }
+    }
+      body{
+        font-family: 'KoHo', sans-serif;
+        background-color: #efefef;
+        background-image: url(https://wallpaperaccess.com/full/3053366.png);
+        background-blend-mode: color-dodge;
+        background-size: 70%;
+    }
+    .header-banner {
+        width: 100%;
+        background: url(https://i.hizliresim.com/g0mee25.jpg) no-repeat;
+        background-size: cover;
+        margin-bottom: -1px;
+        background-position: center;
+        height: 620px;
+        background-attachment: fixed;
+        box-shadow: inset 0 0 2000px 2000px #6d56ff6e;
+    }
+    header.header {
+        margin-bottom: -67px !important;
+        z-index: 999;
+    }
+    .navbar-light {
+        background-color: #f8f9fa00;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(255 255 255) !important;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+    }
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+        color: #ffffff !important;
+    }
+    .header-banner-logo {
+        max-height: 410px;
+        margin-bottom: -100px;
+        filter: brightness(10.5);
+        margin-top: -80px;
+        z-index: 0;
+    }
+    .headersubtext{
+        color: #f8f9fa;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .btn {
+        font-weight: 600;
+    }
+    .redodivid {
+        margin-top: -42px;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .redodivid svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 42px;
+    }
+
+    .redodivid .shape-fill {
+        fill: #fff;
+    }
+    .header-banner {
+        width: 100%;
+        background: url(https://i.hizliresim.com/g0mee25.jpg) no-repeat;
+        background-size: cover;
+        margin-bottom: -1px;
+        background-position: center;
+        height: 620px;
+        background-attachment: fixed;
+        box-shadow: inset 0 0 2000px 2000px #5657ffd9;
+    }
+    .breadcrumb{
+      display: none;
+    }
+    .footer{
+      box-shadow: none !important;
+    }
+    .footer-top {
+        background-color: #2a2a2c;
+    }
+    .footer-top, .footer-top ul li a {
+        color: #9aa0a5;
+    }
+    .footer-bottom {
+        background-color: #2a2a2c;
+    }
+    .footer-title::before {
+        content: "";
+        background: #827ae054;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 12px;
+        margin-left: -5px;
+    }
+    .footer-title {
+        color: #827ae0;
+    }
+    .dcgit {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        z-index: 9;
+    }
+    .footer {
+        margin-top: 0rem !important;
+    }
+    .redoparallax {
+        background: url(https://i.redd.it/fxlb9eda42a31.jpg);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        mix-blend-mode: screen;
+        z-index: 0;
+    }
+    .navbar-light {
+        background-color: #6b6fef;
+    }
+</style>
+<a href="/discord" class="dcgit">
+</a>
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-none">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <span style="color:white; font-weight: bold;">Ghost Shop</span>
+      </a>
+      <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-center align-items-center w-100" id="navbarSupportedContent">
+        <ul id="navbarMainContent" class="mx-auto nav navbar-nav text-center  justify-content-between w-50">
+                                                                      <li class="nav-item active">
+                <a class="nav-link" href="/" ><i class="fa fa-home"></i> Ana Sayfa</a>
+              </li>
+                                                                                                              <li class="nav-item ">
+                <a class="nav-link" href="/magaza" ><i class="fa fa-shopping-cart"></i> Mağaza</a>
+              </li>
+                 
+             
+     <% if (member) { %>
+ <a class="nav-link" href="/" ><i class="fa fa-life-ring"></i> <%= member.username %>#<%= member.discriminator %>
+</a>
+
+ <a class="nav-link" href="/logout" ><i class="fa fa-user-plus"></i> Çıkış Yap</a>
+
+          <% } else { %>
+<a class="nav-link" href="/auth" ><i class="fa fa-sign-in"></i> Giriş Yap</a>
+          <% } %>
+
+  
+
+
+    </div>
+  </nav>
+  </header>
+  <div class="header-banner">
+    <div class="container h-100">
+        <div class="h-100 mt-5">
+            <div class="m-auto text-white text-center">
+              </br></br></br>
+                <h1><strong>Ghost Shop</strong></h1>
+                <br>
+                <b class="headersubtext">Ghost Shop olarak sizlere OwO cash karşılığı altyapı kod sağlamayı planlıyoruz. Hoşgeldiniz 🎉!</b><br><b class="headersubtext">
+İlgili yetkili ekibimiz ile sorularınızı/sorunlarınızı elimizden geldiğince hızlı ve doğru bir şekilde çözüyoruz!</b><br><br>
+
+                              <a class="btn btn-light text-primary" href="https://discord.gg/developers" style="position: relative;z-index: 99;">Discord</a>
+                            <a class="btn btn-primary" href="/magaza" style="position: relative;z-index: 99;">Mağaza</a>
+
+
+                            
+            </div>
+        
+  </div>
+
+		<div class="page-content">
+		<div class="container">
+			<div class="docs-overview py-5">
+				<div class="row justify-content-center">
+
+					<!-- Introduction -->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder mr-2">
+										 <img src="./images/etiket.png"/>
+									</span>
+									<span class="card-title-text">Destek</span>
+								</h5>
+								<div class="card-text">
+									Ürünler hakkında %100 destek sağlıyoruz.
+								</div>
+								<a class="card-link-mask" href="destek"></a>
+							</div>
+						</div>
+					</div>
+					<!-- Introduction -->
+
+					<!-- Installation -->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder mr-2">
+										<img src="./images/moderatore.png"/>
+									</span>
+									<span class="card-title-text">Güvenlik</span>
+								</h5>
+								<div class="card-text">
+								Yaptığımız her eylem güvenlidir rahat olun.
+								</div>
+								<a class="card-link-mask" href="guvenlik"></a>
+							</div>
+						</div>
+					</div>
+					<!-- Installation -->
+
+					<!-- Social Logins -->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder mr-2">
+										<img src="./images/bug.png"/>
+									</span>
+									<span class="card-title-text">Hata</span>
+								</h5>
+								<div class="card-text">
+								Site bulduğun hataları bize bildir.
+								</div>
+								<a class="card-link-mask" href="hata"></a>
+							</div>
+						</div>
+					</div>
+					<!-- Social Logins -->
+
+		
+					<!-- SMS -->
+
+<br/>
+	<footer>Made By <strong/>kaan#1337<strong\> - discord.gg/developers <i/><footer>
+		</div><i>
+	</footer>
+
+
+		</div>
+	</div>
+
+		</div>
+	</div>
+
+
+
+</html>
